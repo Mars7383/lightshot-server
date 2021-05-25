@@ -1,5 +1,5 @@
 {
 	"listenPort": 80,
-	"uploadDir" : "/var/www/html/upload",
-	"baseUrl"   : "http://example.com/upload/{{filename}}"
+	"uploadDir" : "./uploads",
+	"key"   : "PUT YOUR PAYS.HOST KEY HERE"
 }
