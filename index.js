@@ -59,9 +59,9 @@ app.post("/upload/:a/:b/", function (req, res) {
                   name: "file",
                   filename: "file.png"
                 });
-                form.append("key", config.key); // pays.host key
+                form.append("key", config.key); // upload.systems key
 
-                fetch("https://pays.host/api/images/upload", {
+                fetch("https://api.upload.systems/images/upload", {
                   method: "POST",
                   body: form
                 })

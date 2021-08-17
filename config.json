@@ -1,5 +1,5 @@
 {
 	"listenPort": 80,
 	"uploadDir" : "./uploads",
-	"key"   : "PUT YOUR PAYS.HOST KEY HERE"
+	"key"   : "PUT YOUR UPLOAD.SYSTEMS KEY HERE"
 }

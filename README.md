@@ -1,5 +1,5 @@
-# Lightshot to pays.host Bridge
-Lightshot doesn't provide a way to use pays.host, but we can override the hosts file to intercept the screenshot and upload it ourselves.
+# Lightshot to upload.systems Bridge (formerly pays.host)
+Lightshot doesn't provide a way to use upload.systems, but we can override the hosts file to intercept the screenshot and upload it ourselves.
 
 This program uses some bad workarounds to prevent dupe uploads, read below
 <details>
@@ -8,7 +8,7 @@ This program uses some bad workarounds to prevent dupe uploads, read below
   ### Lightshot thumbnail files
   Lightshot likes to make 180x180 "thumbnail" files along with your screenshot, so this program just blocks images with a resolution of 180x180. 
   
-  Additionally, this program blocks JPG files from being uploaded since only thumbnails use those. If you need to upload JPG files for whatever reason, you can remove that one-liner from the ``index.js`` file, but you may experience duplicate uploads to pays.host
+  Additionally, this program blocks JPG files from being uploaded since only thumbnails use those. If you need to upload JPG files for whatever reason, you can remove that one-liner from the ``index.js`` file, but you may experience duplicate uploads to upload.systems
 
   ### Dupe files
   If your screenshot resolution is smaller than 180x180, the generated thumbnail file is just a duplicate of your screenshot. So this program blocks a file from uploading if it's hash matches that of the previous file.
@@ -26,8 +26,8 @@ Grab required modules with ``npm i fs express express-fileupload uid image-size 
 In ``config.json``:
 ```
 listenPort => Port to listen to (80 is recommended)
-uploadDir => Where to temporarily store screenshots (they will be deleted after uploading to pays.host)
-key => Your pays.host key
+uploadDir => Where to temporarily store screenshots (they will be deleted after uploading to upload.systems)
+key => Your upload.systems key
 ```
 ## Client Configuration
 
