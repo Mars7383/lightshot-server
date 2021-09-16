@@ -21,7 +21,7 @@ macOS and Linux don't have ShareX, and some of the alternatives are kinda bad
 
 ## Server Configuration
 
-Grab required modules with ``npm i fs express express-fileupload uid image-size node-fetch form-data crypto``
+Grab required modules with ``npm i``
 
 In ``config.json``:
 ```
