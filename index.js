@@ -89,3 +89,4 @@ app.post("/upload/:a/:b/", function (req, res) {
 });
 
 app.listen(config.listenPort);
+console.log("Lightshot server started!");
